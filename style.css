@@ -7,9 +7,17 @@
   grid-gap: 2px;
 }
 
+.boardCase{
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .whiteCase{
   background-color: white;
 }
 .blackCase{
   background-color: black;
 }
+

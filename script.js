@@ -19,6 +19,7 @@ for(let e=0; e<boardSize; e++){
     var freshNewCase = document.createElement("div");
     caseId = yIdCase[e] + xIdCase;
     freshNewCase.id = caseId;
+    freshNewCase.innerHTML = caseId;
     freshNewCase.classList.add("boardCase");
     document.querySelector(".container").appendChild(freshNewCase);
 
