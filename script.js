@@ -10,9 +10,11 @@ var yIdCase = ["A","B","C","D","E","F","G","H"];
 var caseId = "";
 var arrIdCase = [];
 var caseCount = 0;
+var lineNumber = 0;
 
 // Populate
 for(let e=0; e<boardSize; e++){
+  lineNumber++;
   for(let i=0; i<boardSize; i++){
     var freshNewCase = document.createElement("div");
     caseId = yIdCase[e] + xIdCase;
@@ -29,29 +31,23 @@ for(let e=0; e<boardSize; e++){
     arrIdCase.push(caseObj);
     
 // Color Attribution
-//    if(caseCount % boardSize > 1){ 
+    if(lineNumber % 2){ 
         if(caseCount % 2 === 0){
           freshNewCase.classList.add("blackCase");
         } else {
           freshNewCase.classList.add("whiteCase");
         }
- /*   } else {
+    } else {
         if(caseCount % 2 === 0){
           freshNewCase.classList.add("whiteCase");
         } else {
           freshNewCase.classList.add("blackCase");
         }
     }
-  */
     xIdCase++;
   }
   xIdCase = 1;
 }
-
-console.log(arrIdCase);
-console.log(caseCount % 2 );
-
-
 
 
 
