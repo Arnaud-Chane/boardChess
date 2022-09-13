@@ -5,7 +5,7 @@ document.body.appendChild(boardContainer);
 
 // Variables
 var xIdCase = 1;
-var yIdCase = ["A","B","C","D","E","F","G","H"];
+var yIdCase = 1;
 var caseId = "";
 var arrIdCase = [];
 var caseCount = 0;
@@ -22,7 +22,7 @@ for(let e=0; e<boardSize; e++){
   lineNumber++;
   for(let i=0; i<boardSize; i++){
     var freshNewCase = document.createElement("div");
-    caseId = yIdCase[e] + xIdCase;
+    caseId = yIdCase + ":" + xIdCase;
     freshNewCase.id = caseId;
     freshNewCase.innerHTML = caseId;
     freshNewCase.classList.add("boardCase");
@@ -53,6 +53,7 @@ for(let e=0; e<boardSize; e++){
     xIdCase++;
   }
   xIdCase = 1;
+  yIdCase++;
 }
 
 
