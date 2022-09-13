@@ -1,9 +1,13 @@
+:root{
+  --board-size: 16;
+}
+
 .container{
   height: 300px;
   width: 300px;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(var(--board-size), 1fr);
+  grid-template-rows: repeat(var(--board-size), 1fr);
   grid-gap: 2px;
 }
 

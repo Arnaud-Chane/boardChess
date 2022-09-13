@@ -4,13 +4,18 @@ boardContainer.classList.add("container");
 document.body.appendChild(boardContainer);
 
 // Variables
-var boardSize = 8;
 var xIdCase = 1;
 var yIdCase = ["A","B","C","D","E","F","G","H"];
 var caseId = "";
 var arrIdCase = [];
 var caseCount = 0;
 var lineNumber = 0;
+
+// Size Board Variable
+var boardSize = prompt("Size of board ?");
+var root = document.documentElement;
+root.style.setProperty('--board-size', boardSize);
+
 
 // Populate
 for(let e=0; e<boardSize; e++){
