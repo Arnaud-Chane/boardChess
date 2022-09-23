@@ -32,7 +32,9 @@ for(let e=0; e<boardSize; e++){
     caseCount++;
     var caseObj = {
       id: freshNewCase.id,
-      caseNumber: caseCount
+      caseNumber: caseCount,
+      yAxe: yIdCase,
+      xAxe: xIdCase
     }
     arrIdCase.push(caseObj);
     
@@ -55,6 +57,14 @@ for(let e=0; e<boardSize; e++){
   xIdCase = 1;
   yIdCase++;
 }
+
+console.log(arrIdCase);
+
+
+let elem = document.getElementById("1:1");
+let infoElem = elem.getBoundingClientRect();
+console.log("X :" + infoElem.left);
+console.log("Y :" + infoElem.top);
 
 
 
