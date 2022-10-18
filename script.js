@@ -60,7 +60,7 @@ for(let e=0; e<boardSize; e++){
 
 console.log(arrIdCase);
 
-
+//I tried to get position of an element
 let elem = document.getElementById("1:1");
 let infoElem = elem.getBoundingClientRect();
 console.log("X :" + infoElem.left);
